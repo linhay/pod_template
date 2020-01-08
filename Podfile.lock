@@ -1,0 +1,16 @@
+PODS:
+  - Template (0.0.1)
+
+DEPENDENCIES:
+  - Template (from `./`)
+
+EXTERNAL SOURCES:
+  Template:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Template: e11102db5e0df62e063be79f05b1f5073557eaab
+
+PODFILE CHECKSUM: 9b6b6d70f5e57d029f5396fc045201431d618de5
+
+COCOAPODS: 1.8.4
