@@ -1,16 +1,25 @@
 PODS:
-  - Template (0.0.1)
+  - SwiftLint (0.38.1)
+  - Template (0.0.1):
+    - Template/Core (= 0.0.1)
+  - Template/Core (0.0.1)
 
 DEPENDENCIES:
+  - SwiftLint
   - Template (from `./`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   Template:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Template: e11102db5e0df62e063be79f05b1f5073557eaab
+  SwiftLint: 0aeb99ca7ccfc222ef93e2560a35e669f5465e6c
+  Template: 6d4d7d0f683059cb4161ca63cada7217038523f1
 
-PODFILE CHECKSUM: 9b6b6d70f5e57d029f5396fc045201431d618de5
+PODFILE CHECKSUM: 42868da1e41dbf2e68101f78444fdc54a42f2290
 
 COCOAPODS: 1.8.4

@@ -2,17 +2,20 @@
 platform :ios, '10.0'
 project 'Template.xcodeproj'
 
-target 'iOS' do
+def setup_pod
   use_frameworks!
   pod 'Template', :path => './'
+  pod 'SwiftLint', :configurations => 'Debug'
+end
+
+target 'iOS' do
+  setup_pod
 end
 
 target 'macOS' do
-  use_frameworks!
-  pod 'Template', :path => './'
+  setup_pod
 end
 
 target 'tvOS' do
-  use_frameworks!
-  pod 'Template', :path => './'
+  setup_pod
 end
