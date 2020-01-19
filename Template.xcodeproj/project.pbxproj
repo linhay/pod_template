@@ -10,7 +10,6 @@
 		5181247829A015DD2DF2A14B /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53B32020E537F7EEDEEB6B7 /* Pods_iOS.framework */; };
 		60EF044B1A136F25F784E9ED /* Pods_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D3F3D55A7590F87CD5C792 /* Pods_tvOS.framework */; };
 		C4835C603F6EB2C64B60CA68 /* Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47213DE0D209873E5C9C9134 /* Pods_macOS.framework */; };
-		CD6A06D823D19482006E8D3E /* NotificationBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A06D723D19482006E8D3E /* NotificationBannerViewController.swift */; };
 		CDCF2D7023C57F0600107BF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF2D6F23C57F0600107BF1 /* ViewController.swift */; };
 		CDCF2D7323C57F0600107BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCF2D7123C57F0600107BF1 /* Main.storyboard */; };
 		CDCF2D7523C57F0700107BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCF2D7423C57F0700107BF1 /* Assets.xcassets */; };
@@ -85,7 +84,6 @@
 		A7E5718611A5FFDDC60392B9 /* Pods_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFDA2ACCDE8BE1826CA620 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		CB9787BC7B7366406412C295 /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		CD6A06D723D19482006E8D3E /* NotificationBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBannerViewController.swift; sourceTree = "<group>"; };
 		CDCF2D6923C57F0600107BF1 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCF2D6F23C57F0600107BF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDCF2D7223C57F0600107BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,14 +183,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CD6A06D623D19461006E8D3E /* TestViewController */ = {
-			isa = PBXGroup;
-			children = (
-				CD6A06D723D19482006E8D3E /* NotificationBannerViewController.swift */,
-			);
-			path = TestViewController;
-			sourceTree = "<group>";
-		};
 		CDCF2D4523C57CEA00107BF1 = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +213,6 @@
 		CDCF2D6A23C57F0600107BF1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CD6A06D623D19461006E8D3E /* TestViewController */,
 				CDCF2E9D23C707F800107BF1 /* AppDelegate.swift */,
 				CDCF2D6F23C57F0600107BF1 /* ViewController.swift */,
 				CDCF2D7123C57F0600107BF1 /* Main.storyboard */,
@@ -701,7 +690,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6A06D823D19482006E8D3E /* NotificationBannerViewController.swift in Sources */,
 				CDCF2E9E23C707F800107BF1 /* AppDelegate.swift in Sources */,
 				CDCF2D7023C57F0600107BF1 /* ViewController.swift in Sources */,
 			);

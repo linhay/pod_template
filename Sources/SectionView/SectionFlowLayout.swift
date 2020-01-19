@@ -53,6 +53,13 @@ open class SectionFlowLayout: UICollectionViewFlowLayout {
         }
     }
 
+    open override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        guard let collectionView = self.collectionView, collectionView.bounds.size != newBounds.size else {
+            return true
+        }
+        return false
+    }
+
 }
 
 // MARK: - Mode
@@ -64,7 +71,7 @@ extension SectionFlowLayout {
                 let delegate = collectionView.delegate as? UICollectionViewDelegateFlowLayout,
                 let inset = delegate.collectionView?(collectionView, layout: self, insetForSectionAt: item.indexPath.section)
                 else {
-                continue
+                    continue
             }
             if item.representedElementKind == UICollectionView.elementKindSectionFooter {
                 item.frame.origin.y -= inset.bottom
