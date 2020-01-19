@@ -20,10 +20,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 /// SOFTWARE.
 
-#ifndef Template_h
-#define Template_h
+import UIKit
 
-FOUNDATION_EXPORT double TemplateVersionNumber;
-FOUNDATION_EXPORT const unsigned char TemplateVersionString[];
+open class SectionItemCell<Model>: UICollectionViewCell {
 
-#endif /* Template_h */
+    /// 首选cell大小
+    open class var preferredSize: CGSize {
+         return .zero
+     }
+
+    /// 首选cell大小
+    /// - Parameter collectionView: 所在的 `collectionView`
+    /// - Parameter model: 配合计算的 model
+    open class func preferredSize(collectionView: UICollectionView, model: Model?) -> CGSize {
+        return .zero
+    }
+    
+}

@@ -4,7 +4,8 @@ project 'Template.xcodeproj'
 
 def setup_pod
   use_frameworks!
-  pod 'Template', :path => './'
+  pod 'SnapKit'
+  pod 'Stuart', :path => './Template.podspec'
   pod 'SwiftLint', :configurations => 'Debug'
 end
 

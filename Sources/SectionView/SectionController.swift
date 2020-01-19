@@ -20,4 +20,24 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 /// SOFTWARE.
 
-import Foundation
+import UIKit
+
+open class SectionController: UIViewController {
+    
+    public let sectionView  = SectionView()
+    public lazy var manager = SectionManager(sectionView: sectionView)
+
+    public convenience init() {
+        self.init(nibName: nil, bundle: nil)
+    }
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        if view.backgroundColor == nil {
+            view.backgroundColor = .white
+        }
+        view.addSubview(sectionView)
+        sectionView.frame = view.bounds
+    }
+    
+}
